@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:ital,wght@0,400;1,300&display=swap");
+
+:root {
+  --bg-color: #d9cdf7;
+  --text-color: #271a45;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: var(--text-color);
+}
+
+body {
+  display: flex;
+  background-color: var(--bg-color);
+}
+
+.none {
+  display: none;
+}
+
+h1 {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+
+  margin: 12px 0;
+}
+
+p {
+  font-family: "Lato", serif;
+}
+p#cod {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 100%;
+}
+p#price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 63px;
+}
+
+.container-image {
+  /* border: 2px solid red; */
+}
+
+.container-image button {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  font-size: 30px;
+  height: 40px;
+}
+
+.card-info button {
+  border: 1px solid --bg-color;
+  width: 150px;
+  height: 32px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border: 0.5px solid #271a45;
+  border-radius: 999px;
+  background: none;
+
+  margin-top: 20px;
+}
+
+.image{
+    width: 450px;
+    height: 253px;
+}

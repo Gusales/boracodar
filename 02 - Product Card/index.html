@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 02 - Product Card</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="container-image">
+            <img src="./assets/images/sofa.jpg" alt="Sofá" class="image">
+            <button onclick="startanimate()" class="forAnimated"><img src="./assets/images/360-button.svg" alt="Vizualizar a imagem em 360 graus"></button>
+            <button onclick="stopanimate()" class="stopAnimated none"><img src="./assets/images/close-button.svg" alt="Vizualizar a imagem em 360 graus"></button>
+        </div>
+
+        <div class="card-info">
+            <p id="cod">CÓDIGO: 42404</p>
+            <h1>Sofá Margot II - Rosé</h1>
+            <p id="price">R$ 4.000 </p> 
+            <button>ADICIONAR À CESTA</button>
+        </div>
+    </div>
+
+    <script>
+        function startanimate() {
+            document.querySelector('.image').src = './assets/images/sofa.gif'
+
+            document.querySelector('.none').classList.remove('none')
+            document.querySelector('.forAnimated').classList.add('none')
+        }
+        function stopanimate() {
+            document.querySelector('.image').src = './assets/images/sofa.jpg'
+
+            document.querySelector('.forAnimated').classList.remove('none')
+            document.querySelector('.stopAnimated').classList.add('none')
+        }
+    </script>
+</body>
+</html>
