@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #1a1924;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+p,
+h1,
+h2 {
+    color: #ffffff;
+    font-family: "Roboto";
+}
+span{
+    color: #07847e;
+    font-family: "Roboto";
+}
+.contato {
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.contato h1, .contato span{
+    margin-left: 5px;
+}   
+.contact-image {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+.chat {
+  height: 650px;
+  width: 90%;
+  margin: 20px;
+  padding: 10px;
+
+  display: grid;
+  grid-auto-flow: row;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.chat h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.me,
+.to {
+  width: 50%;
+}
+.to {
+  text-align: left;
+}
+.to p {
+  position: absolute;
+  left: 0;
+  padding: 14px;
+  gap: 10px;
+  width: 50%;
+  background: #633bbc;
+  border-radius: 0px 8px 8px 8px;
+  margin-left: 10px;
+}
+.me {
+  text-align: right;
+}
+.me p {
+  position: absolute;
+  right: 0;
+  padding: 14px;
+  gap: 10px;
+  /* width: 50%; */
+  background: #07847e;
+  border-radius: 8px 8px 0px 8px;
+  margin-right: 10px;
+}
+.mensage {
+  width: 100%;
+}
+
+.sendMensage {
+  height: 54px;
+  width: 90%;
+  background-color: #282843;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  position: relative;
+  border-radius: 999px;
+}
+
+.sendMensage input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding-left: 24px;
+  font-size: 15px;
+  color: #ffffff;
+}
+.sendMensage input:focus {
+  border: none;
+  outline: none;
+}
+.sendMensage button {
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
