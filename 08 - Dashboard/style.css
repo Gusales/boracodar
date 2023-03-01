@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+}
+
+#app {
+  grid-template-columns: 29.6rem max-content max-content;
+  grid-template-rows: max-content;
+  column-gap: 3.2rem;
+  row-gap: 5.8rem;
+
+  width: fit-content;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  background-color: #282738;
+
+  padding: 11.2rem 12.3rem;
+  place-content: center;
+}
+.box {
+  line-height: 160%;
+
+  padding: 2.9rem 4.8rem;
+
+  background: #363447;
+  box-shadow: 0.3rem 0.4rem 2.6rem rgb(0, 0, 0, 0.25);
+  border-radius: 1.6rem;
+}
+
+.box:nth-child(4) {
+  grid-column: 1/4;
+}
+
+.top {
+  font-weight: 600;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.bottom{
+    font-weight: 500;
+    font-size: 1.4rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+    margin-top: auto;
+}
+
+.bottom .item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bottom .item span{
+    --bg-color: #4a4556; 
+}
+
+.bottom .item span:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.bottom .item span:nth-child(1)::before{
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+
+    display: block;
+    background: var(--bg-color);
+    border-radius: 50%;
+}
+
+.nps {
+  gap: 3.2rem;
+}
+
+.nps .middle {
+  height: 19.7rem;
+  place-content: center;
+  justify-items: center;
+  gap: 1.6rem;
+  color: #81fbb8;
+}
+
+.nps .bottom {
+  gap: 1rem;
+}
+
+.middle-flex{
+    display: flex;
+    place-content: center;
+
+    position: relative;
+}
+
+svg {
+    --percentage: 0;
+    width: 19.7rem;
+    height: 19.7rem;
+    transform: rotate(-90deg);
+  }
+  
+  svg circle {
+    stroke-dasharray: 618;
+    stroke-dashoffset: 618;
+    stroke-width: 35;
+    fill: none;
+  }
+  
+  svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+  }
+  
+  svg circle:nth-child(2) {
+    stroke-dashoffset: calc(618 - (618 * var(--percentage)) / 100);
+    stroke-linecap: round;
+  
+    animation: progress 1s ease-in-out;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 618;
+      stroke-dashoffset: 618;
+    }
+  }
+
+  .middle-flex .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  h3{
+    font-size: 3.4rem;
+  }
+  p{
+    font-size: 1.6rem;
+  }
