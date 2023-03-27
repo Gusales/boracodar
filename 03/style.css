@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: #130f1e;
+  padding: 4.4rem;
+
+  font-size: 1.6rem;
+
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+}
+p {
+  margin-top: .8rem;
+  font-family: "Roboto", sans-serif;
+  opacity: 0.67;
+}
+
+.buttons{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+
+  margin-top: 6.8rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: "Inter", sans-serif;
+
+  background-color: var(--bg-color);
+
+  border: 0;
+  border-radius: 2.4rem;
+
+  padding: 1.2rem 2.4rem;
+
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: var(--bg-hover);
+}
+
+button:focus {
+  outline: 2px solid #d9cdf7;
+}
+
+button:disabled {
+  opacity: 0.56;
+  cursor: not-allowed;
+  background-color: var(--bg-color);
+}
+
+.primary {
+  --bg-color: #8257e5;
+  --bg-hover: #9674e5;
+}
+.secondary {
+  --bg-color: #3c3748;
+  --bg-hover: #6a617f;
+}
+.tertiary {
+  --bg-color: transparent;
+  --bg-hover: transparent;
+}
+
+.loading {
+  cursor: progress;
+}
+.movable {
+  cursor: move;
+}
+
+.rotation {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
