@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat || Boracodar 04</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+  <div id="app">
+
+    <div class="contato">
+      <div class="user-info">
+        <img src="https://avatars.githubusercontent.com/u/85498221?v=4" alt="Imagem do usuário" class="user-image" />
+
+        <div class="user-status">
+          <h1>Gustavo Sales</h1>
+          <div class="status">Online</div>
+        </div>
+      </div>
+
+      <button class="close-chat">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+
+    </div>
+
+    <div class="chat">
+
+      <div class="last-seen">
+        Hoje 11:30
+      </div>
+
+      <div class="mensages">
+        <div class="mensage to">
+          <div class="mensage-info">Gustavo Sales - 11:30</div>
+          <div class="mensage-body">Tive uma ideia incrível para um projeto! 😍</div>
+        </div>
+
+        <div class="mensage from">
+          <div class="mensage-info">Você - 11:32</div>
+          <div class="mensage-body">Sério? Me conta mais.</div>
+        </div>
+
+        <div class="mensage to">
+          <div class="mensage-info">Gustavo Sales - 11:34</div>
+          <div class="mensage-body">E se a gente fizesse um chat moderno e responsivo em apenas uma semana?</div>
+        </div>
+
+        <div class="mensage from">
+          <div class="mensage-info">Você - 11:36</div>
+          <div class="mensage-body"><strong>#boraCodar!</strong> 🚀</div>
+        </div>
+        
+      </div>
+
+    </div>
+
+    <form class="send">
+          <input type="text" placeholder="Digite sua mensagem">
+          <button type="submit"> <i class="fa-sharp fa-solid fa-paper-plane"></i> </button>
+    </form>
+
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
