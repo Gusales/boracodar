@@ -1,8 +1,8 @@
 # #boraCodar
 
 ## 📖 Informações!
-Estes são os projetos #boraCodar da Rocketseat desenvolvidos por mim.
-<a href="https://boracodar.dev">Acesse o desafio desta semana clicando aqui</a>
+Estes são os projetos #boraCodar da Rocketseat desenvolvidos por mim. <br>
+<a href="https://boracodar.dev">Acesse o desafio desta semana clicando aqui</a> <br>
 (Infelizmente, não consegui codar os desafios 01 e 02, mas futuramente eles já estarão aqui!)
 
 
