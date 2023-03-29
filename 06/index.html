@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartão de Embarque || Boracodar 06</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/classes-utilitarias.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+  <main id="app">
+    <h1>Cartão de Embarque</h1>
+
+    <section class="ticket">
+
+      <section class="flight-info grid"> 
+
+        <div class="flight-number-date grid column">
+          <div class="flight-number">
+            <p>Voo</p>
+            <strong>RS995</strong>
+          </div>
+
+          <div class="flight-date txt-right">
+            <p>Data</p>
+            <strong>23/05/2023</strong>
+          </div>
+        </div>
+
+        <div class="flight grid column">
+
+          <div class="flight-from grid">
+            <p>Vit. Da Conquista, Brasil</p>
+            <strong>GRU</strong>
+            <time>17:00</time>
+          </div>
+
+          <i class="fa-solid fa-plane grid"></i>
+        
+          <div class="flight-to grid txt-right">
+            <p>São Francisco, EUA</p>
+            <strong>SFO</strong>
+            <time>04:48 <sup>+1</sup> </time>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="passager-info grid column">
+        <div class="passager">
+          <p>Passageiro</p>
+          <strong>Gustavo Sales</strong>
+        </div>
+
+        <div class="passager-seat txt-right">
+          <p>Assento</p>
+          <strong>28A</strong>
+        </div>
+      </section>
+
+      <section class="boarding-info">
+        <div class="container grid column">
+          <dl id="boarding-info" class="grid">
+            <dt>
+               <p>Embarque</p>
+               <time>16:15</time>
+            </dt>
+            <dt>
+              <p>Terminal</p>
+              <strong>2</strong>
+            </dt>
+            <dt>
+              <p>Portão</p>
+              <strong>15</strong>
+            </dt>
+          </dl>
+
+          <div class="qrcode">
+            <img src="./assets/qrcode.png" alt="QR code com informações do voo">
+            <p>Grupo de embarque: 3</p>
+          </div>
+        </div>
+
+        <p><strong>Atenção:</strong> o portão fecha 16:45</p>
+      </section>
+
+    </section>
+
+    <footer>
+      Qualquer problema procure o balcão de atendimento da sua companhia aérea
+    </footer>
+  </main>
+</body>
+
+</html>

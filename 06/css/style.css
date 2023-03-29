@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%) no-repeat;
+}
+
+#app {
+  max-width: 32.7rem;
+  margin: auto;
+}
+
+h1,
+strong {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+
+strong {
+  color: rgba(0, 0, 0, 0.88);
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+sup {
+  font-size: 1rem;
+}
+
+.ticket {
+  margin-top: 2rem;
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+}
+
+.ticket section {
+  background-color: #ffffff;
+  padding: 2.4rem 3.2rem;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.flight-info {
+  border-radius: 2.4rem 2.4rem 0 0;
+  gap: 2.4rem;
+
+  --mask: radial-gradient(1.2rem at 1.2rem bottom, transparent 95%, #000000) -1.2rem;
+}
+
+.flight strong {
+  font-size: 4rem;
+}
+
+.flight time {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.fa-plane {
+  align-self: center;
+  font-size: 2.4rem;
+}
+
+.passager-info {
+  border: 0.1rem dashed rgba(0, 0, 0, 0.32);
+  border-right: 0;
+  border-left: 0;
+  --mask: radial-gradient(1.2rem at 1.2rem 1.2rem, transparent 95%, #000000) -1.2rem -1.2rem;
+}
+
+.boarding-info {
+  border-radius: 0 0 2.4rem 2.4rem;
+  --mask: radial-gradient(1.2rem at 1.2rem top, transparent 95%, #000000) -1.2rem;
+}
+
+#boarding-info {
+  gap: 1.6rem;
+  min-width: 9.5rem;
+}
+
+.boarding-info .container {
+  align-items: center;
+  gap: 0.8rem;
+}
+
+dt time {
+  padding: 0.4rem 0.8rem;
+  display: inline-block;
+  margin-top: 0.2rem;
+  font-weight: 500;
+  color: #ffffff;
+
+  background: #633bbc;
+  border-radius: 0.8rem;
+}
+
+.qrcode p {
+  text-align: center;
+}
+
+.boarding-info > p {
+  margin-top: 2.4rem;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.64;
+}

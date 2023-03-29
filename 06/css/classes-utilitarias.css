@@ -1,0 +1,11 @@
+.grid{
+  display: grid;
+}
+
+.column{
+  grid-auto-flow: column;
+}
+
+.txt-right{
+  text-align: right;
+}

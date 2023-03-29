@@ -8,7 +8,7 @@ Estes são os projetos #boraCodar da Rocketseat desenvolvidos por mim. <br>
 
 ## 🚀 Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
 
 - HTML
 - CSS
@@ -57,7 +57,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
         </tr>
         <tr>
             <td>05</td>
-            <td><a href="04">Calculadora</a></td>
+            <td><a href="05">Calculadora</a></td>
+            <td>29/03/23</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td><a href="06">Cartão de Embarque</a></td>
             <td>29/03/23</td>
         </tr>
     </tbody>
