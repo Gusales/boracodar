@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora || Boracodar 05</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+  <div id="app">
+
+    <div class="display">
+      <div class="last-calc"></div>
+
+      <div class="result">
+        <i class="fa-solid fa-equals"></i>
+        <span id="calc-result"> 0 </span>
+      </div>
+      
+    </div>
+
+    <div class="keyboard">
+
+      <button class="clear" onclick="clearEntry()">CE</button>
+      <button onclick="clean()">C</button>
+      <button onclick="writeInDisplay('%', true)">%</button>
+      <button class="operator" onclick="writeInDisplay('/')"><i class="fa-solid fa-divide"></i></button>
+
+      <button onclick="writeInDisplay(7)">7</button>
+      <button onclick="writeInDisplay(8)">8</button>
+      <button onclick="writeInDisplay(9)">9</button>
+      <button class="operator" onclick="writeInDisplay('*')"><i class="fa-solid fa-xmark"></i></button>
+
+      <button onclick="writeInDisplay(4)">4</button>
+      <button onclick="writeInDisplay(5)">5</button>
+      <button onclick="writeInDisplay(6)">6</button>
+      <button class="operator" onclick="writeInDisplay('-')"><i class="fa-solid fa-minus"></i></button>
+
+      <button onclick="writeInDisplay(1)">1</button>
+      <button onclick="writeInDisplay(2)">2</button>
+      <button onclick="writeInDisplay(3)">3</button>
+      <button class="operator" onclick="writeInDisplay('+')"><i class="fa-solid fa-plus"></i></button>
+
+      <button onclick="writeInDisplay('-', true)"><img src="./assets/plus-minus.svg" alt="Positivo ou Negativo"></button>
+      <button onclick="writeInDisplay(0)">0</button>
+      <button onclick="writeInDisplay('.')">.</button>
+      <button class="equals" onclick="calc()"><i class="fa-solid fa-equals"></i></button>
+
+    </div>
+
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

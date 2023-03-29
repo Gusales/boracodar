@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: -0.02em;
+  color: #ebebeb;
+  background: linear-gradient(180deg, #807ece 0%, #8e7ece 100%);
+
+  display: grid;
+  place-content: center;
+}
+
+#app {
+  width: 35.6rem;
+  height: 56.6rem;
+
+  background: #2d2a37;
+
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25),
+    0rem 18.8rem 5.2rem rgba(0, 0, 0, 0.01),
+    0rem 12rem 4.8rem rgba(0, 0, 0, 0.04),
+    0rem 6.8rem 4.1rem rgba(0, 0, 0, 0.15), 0rem 3rem 3rem rgba(0, 0, 0, 0.26),
+    0rem 0.8rem 1.7rem rgba(0, 0, 0, 0.29),
+    inset 0rem 0.6rem 0.8rem rgba(255, 255, 255, 0.1),
+    inset 0rem -0.4rem 0.5rem rgba(0, 0, 0, 0.22);
+
+  border-radius: 4.8rem;
+}
+
+.display {
+  margin-top: 5.4rem;
+  padding-inline: 5.4rem;
+}
+
+.last-calc {
+  text-align: right;
+  color: #6b6b6b;
+}
+
+.result {
+  margin-top: 0.8rem;
+
+  font-size: 3.6rem;
+  line-height: 140%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result i{
+  font-size: 2rem;
+  color: #6b6b6b;
+}
+
+.keyboard {
+  margin: 2.6rem 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  /* padding-bottom: 3.2rem; */
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+
+  display: grid;
+  place-content: center;
+
+  width: 6.4rem;
+  height: 6.4rem;
+
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #EBEBEB;
+
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #2d2a37;
+
+  box-shadow: 
+  .0rem 1.1rem .7rem rgba(0, 0, 0, 0.01),
+  .0rem .7rem .7rem rgba(0, 0, 0, 0.04),
+  .0rem .4rem .6rem rgba(0, 0, 0, 0.1),
+  .0rem .2rem .4rem rgba(0, 0, 0, 0.26),
+  .0rem .0rem .2rem rgba(0, 0, 0, 0.29),
+  inset .0rem .2rem .3rem rgba(255, 255, 255, 0.06);
+
+
+  border-radius: 99.9rem;
+}
+
+/* VARIAÇÕES DE BOTÕES!! */
+.clear{
+  color: #975DFA;
+}
+.operator{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0.01%, rgba(255, 255, 255, 0.05) 100%), #462878;
+
+  box-shadow:
+  0px 11px 7px rgba(0, 0, 0, 0.01),
+  0px 7px 7px rgba(0, 0, 0, 0.04),
+  0px 4px 6px rgba(0, 0, 0, 0.1),
+  0px 2px 4px rgba(0, 0, 0, 0.26),
+  0px 0px 2px rgba(0, 0, 0, 0.29),
+  inset 0px 2px 3px rgba(255, 255, 255, 0.1);
+}
+
+.equals{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%), #7F45E2;
+
+  box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01),
+  0px 7px 7px rgba(0, 0, 0, 0.04),
+  0px 4px 6px rgba(0, 0, 0, 0.1),
+  0px 2px 4px rgba(0, 0, 0, 0.26),
+  0px 0px 2px rgba(0, 0, 0, 0.29),
+  inset 0px 2px 3px rgba(255, 255, 255, 0.1);
+}

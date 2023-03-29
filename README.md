@@ -55,5 +55,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
             <td><a href="04">Chat</a></td>
             <td>28/03/23</td>
         </tr>
+        <tr>
+            <td>05</td>
+            <td><a href="04">Calculadora</a></td>
+            <td>29/03/23</td>
+        </tr>
     </tbody>
 </table></p>
