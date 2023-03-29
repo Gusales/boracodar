@@ -1,10 +1,10 @@
 # #boraCodar
 
 ## 📖 Informações!
+
 Estes são os projetos #boraCodar da Rocketseat desenvolvidos por mim. <br>
 <a href="https://boracodar.dev">Acesse o desafio desta semana clicando aqui</a> <br>
 (Infelizmente, não consegui codar os desafios 01 e 02, mas futuramente eles já estarão aqui!)
-
 
 ## 🚀 Tecnologias
 
@@ -61,7 +61,7 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
             <td>29/03/23</td>
         </tr>
         <tr>
-            <td>05</td>
+            <td>06</td>
             <td><a href="06">Cartão de Embarque</a></td>
             <td>29/03/23</td>
         </tr>
