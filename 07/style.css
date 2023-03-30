@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-button: #ffffff;
+  --txt-button: #6246ea;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header {
+  min-height: 53.2rem;
+  width: 100%;
+  background: #f8f8ff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  display: grid;
+  place-content: center;
+  gap: 4rem;
+}
+
+header::before {
+  content: "";
+
+  background-image: url("./assets/svg/header/header-svg-top.svg");
+  width: 40.7rem;
+  height: 34.5rem;
+
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+header::after {
+  content: "";
+  display: block;
+
+  background-image: url("./assets/svg/header/header-svg-bottom.svg");
+  width: 41.4rem;
+  height: 33rem;
+  position: absolute;
+  bottom: -1.2rem;
+  right: 0;
+  z-index: 0;
+}
+
+#content {
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+}
+
+.content p {
+  font-weight: 500;
+  line-height: 160%;
+  color: #e45858;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.content h1 {
+  font-size: 4.8rem;
+  line-height: 125%;
+  color: #121214;
+  max-width: 64.7rem;
+  margin: 1.8rem auto 0;
+}
+
+.content h1 span {
+  color: #6246ea;
+}
+
+.content-form {
+  background: #ffffff;
+  border: 0.1rem solid #eaeaea;
+  border-radius: 1rem;
+  padding: 4rem;
+  gap: 2.4rem;
+  margin-top: 4rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+input,
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.input-wrapper select {
+  border: 0;
+  background-color: transparent;
+}
+
+label {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  padding: 0;
+  margin: -0.1rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+option {
+  color: #121214;
+}
+
+option:disabled {
+  display: none;
+}
+
+.input-wrapper input:focus,
+.input-wrapper button:focus {
+  outline: 0;
+}
+
+.input-wrapper {
+  background: #f4f4ff;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.2rem 0.8rem 1.2rem 1.4rem;
+}
+
+.input-wrapper select,
+.input-wrapper input {
+  width: 35rem;
+  text-align: left;
+}
+
+.input-wrapper input::placeholder,
+.input-wrapper select {
+  color: #7c7c8a;
+  font-size: 1.4rem;
+}
+
+.input-wrapper:focus-visible {
+  outline: 0.1rem solid #000000;
+}
+
+.content-form > button {
+  border: 0;
+  background: #6246ea;
+  border-radius: 0.5rem;
+  padding: 1.2rem 3.2rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+.content-form > button:hover,
+.main-title .btn-select button.selected:hover {
+  background: #7f66f7;
+  transition: background 150ms;
+}
+
+main {
+  padding: 10rem 11.2rem;
+}
+
+.main-title,
+.main-cards {
+  width: 100%;
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title h2 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 140%;
+}
+
+.selected {
+  --bg-button: #6246ea;
+  --txt-button: #ffffff;
+}
+
+.main-title .btn-select button {
+  height: 3.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  padding: 0.4rem 2.4rem;
+  border-radius: 0.5rem;
+
+  background-color: var(--bg-button);
+  color: var(--txt-button);
+}
+
+.btn-select {
+  border: 0.1rem solid #eaeaea;
+  border-radius: 0.6rem;
+
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.btn-select button:hover {
+  outline: 0.1rem solid #6246ea;
+}
+
+.btn-select button.selected:hover {
+  outline: 0;
+}
+
+.main-cards {
+  margin-top: 4rem;
+  width: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.card {
+  /* padding: 1.6rem; */
+  overflow: hidden;
+  max-width: 38rem;
+
+  width: fit-content;
+
+  border: 0.1rem solid #eaeaea;
+  border-radius: 1rem;
+}
+
+.card-body {
+  display: grid;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.card-body > p{
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 160%;
+}
+
+.card-body .city {
+  display: flex;
+  align-items: center;
+}
+
+.city p {
+  margin-left: 0.8rem;
+  font-size: 1.6rem;
+  line-height: 160%;
+  color: rgba(0, 0, 0, 0.75);
+}

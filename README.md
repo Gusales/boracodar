@@ -68,5 +68,10 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
             <td><a href="06">✈ Cartão de Embarque</a></td>
             <td>29/03/23</td>
         </tr>
+        <tr>
+            <td>07</td>
+            <td><a href="07">🎉 Encontre seu bloquinho de carnaval</a></td>
+            <td>30/03/23</td>
+        </tr>
     </tbody>
 </table></p>
