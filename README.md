@@ -2,9 +2,11 @@
 
 ## 📖 Informações!
 
-Estes são os projetos #boraCodar da Rocketseat desenvolvidos por mim. <br>
-<a href="https://boracodar.dev">Acesse o desafio desta semana clicando aqui</a> <br>
+Estes são os projetos #boraCodar promovidos pela <a href="https://www.youtube.com/@rocketseat">Rocketseat</a> e desenvolvidos por mim. <br>
+<a href="https://boracodar.dev">Acesse o desafio desta semana clicando aqui!</a> <br>
 (Infelizmente, não consegui codar os desafios 01 e 02, mas futuramente eles já estarão aqui!)
+
+<strong>Never stop learning! 💭</strong>
 
 ## 🚀 Tecnologias
 
@@ -14,6 +16,7 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
 - CSS
 - JavaScript
 - Git e Github
+- Figma
 
 ## 📂 Projetos
 
@@ -47,22 +50,22 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
     <tbody>
         <tr>
             <td>03</td>
-            <td><a href="03">Botões e Cursores</a></td>
+            <td><a href="03">🔘 Botões e Cursores</a></td>
             <td>27/03/23</td>
         </tr>
         <tr>
             <td>04</td>
-            <td><a href="04">Chat</a></td>
+            <td><a href="04">💬 Chat</a></td>
             <td>28/03/23</td>
         </tr>
         <tr>
             <td>05</td>
-            <td><a href="05">Calculadora</a></td>
+            <td><a href="05">➗ Calculadora</a></td>
             <td>29/03/23</td>
         </tr>
         <tr>
             <td>06</td>
-            <td><a href="06">Cartão de Embarque</a></td>
+            <td><a href="06">✈ Cartão de Embarque</a></td>
             <td>29/03/23</td>
         </tr>
     </tbody>
