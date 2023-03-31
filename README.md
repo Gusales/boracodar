@@ -73,5 +73,10 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
             <td><a href="07">🎉 Encontre seu bloquinho de carnaval</a></td>
             <td>30/03/23</td>
         </tr>
+        <tr>
+            <td>08</td>
+            <td><a href="08">📈 Dashboard</a></td>
+            <td>31/03/23</td>
+        </tr>
     </tbody>
 </table></p>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard || Boracodar 08</title>
+
+  <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main id="app" class="grid">
+    <section class="box nps-geral flex-column-center">
+      <h2>NPS geral</h2>
+      <div class="smile-frame flex-column-center">
+        <img src="./assets/smile.svg" alt="Emoji de sorriso de cor verde">
+        <h3>Excelente!</h3>
+      </div>
+      <p>NPS score: <span>75</span></p>
+    </section>
+
+    <section class="box nps-sales flex-column-center">
+      <h2>Vendas fechadas</h2>
+      <div class="grafic-frame flex-row-center">
+        <svg 
+        viewBox="0 0 232 232"
+        style="--percentage: 70"
+        >
+          <circle
+          cx="50%"
+          cy="50%"
+          r="98.5"
+          opacity="0.1"
+          stroke="#D9D9D9"
+          />
+          <circle
+          cx="50%"
+          cy="50%"
+          r="98.5"
+          stroke=url(#paint0_linear_201_85)
+          />
+
+          <defs>
+            <linearGradient 
+            id="paint0_linear_201_85" 
+            x1="-9" 
+            x2="145" 
+            y1="82" 
+            y2="178" 
+            gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#CE9FFC" />
+              <stop offset="1" stop-color="#7367F0" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="svg-wrapper">
+          <h3>70%</h3>
+          <p>Alcançada</p>
+        </div>
+      </div>
+      <div class="grafic-info flex-row-center">
+        <p class="flex-row-center">Esperado: <span>100</span></p>
+        <p class="flex-row-center">Alcançado: <span>70</span></p>
+      </div>
+    </section>
+
+    <section class="box nps-month flex-column-center" style="--percentage: 90">
+      <h2>Meta mensal</h2>
+      <div class="grafic-frame flex-row-center">
+        <svg viewBox="0 0 232 232" style="--percentage: 90">
+          <circle cx="50%" cy="50%" r="98.5" opacity="0.1" stroke="#D9D9D9" />
+          <circle cx="50%" cy="50%" r="98.5" stroke=url(#paint0_linear_201_104) />
+        
+          <defs>
+            <linearGradient id="paint0_linear_201_104" x1="-9" x2="145" y1="82" y2="178" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#DF9780" />
+              <stop offset="1" stop-color="#A66DE9" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="svg-wrapper">
+          <h3>90%</h3>
+          <p>Alcançada</p>
+        </div>
+      </div>
+      <div class="grafic-info flex-row-center">
+        <p class="flex-row-center">Esperado: <span>R$ 70K</span></p>
+        <p class="flex-row-center">Alcançado: <span>R$ 63K</span></p>
+      </div>
+    </section>
+
+    <section class="box nps-weekly grid">
+      <h3>Vendas por dia da semana</h3>
+
+      <div class="nps-weekly-grafic">
+        <div class="weekly-grafic-info grid">
+          <div class="most-sell-days grid">
+            <p>Dia com mais vendas</p>
+            <h4>Quarta-feira</h4>
+          </div>
+          <div class="loss-sell-days grid">
+            <p>Dia com menos vendas</p>
+            <h4>Domingo</h4>
+          </div>
+        </div>
+        <div class="weekly-grafic">
+          <div class="grafic">
+            <div class="grafic-bar">
+              <div class="bar" style="--bar-height: 3.9rem"></div>
+              <span>dom</span>
+            </div>
+            <div class="grafic-bar">
+              <div class="bar" style="--bar-height: 11.5rem"></div>
+              <span>seg</span>
+            </div>
+            <div class="grafic-bar">
+              <div class="bar" style="--bar-height: 7.6rem"></div>
+              <span>ter</span>
+            </div>
+            <div class="grafic-bar">
+              <div class="bar" style="--bar-height: 15.9rem"></div>
+              <span>qua</span>
+            </div>
+            <div class="grafic-bar">
+              <div class="bar" style="--bar-height: 12.9rem"></div>
+              <span>qui</span>
+            </div>
+            <div class="grafic-bar">
+              <div class="bar" style="--bar-height: 12rem"></div>
+              <span>sec</span>
+            </div>
+            <div class="grafic-bar">
+              <div class="bar" style="--bar-height: 6.9rem"></div>
+              <span>sab</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
