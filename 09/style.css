@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  background: #f8fafc;
+
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+#app {
+  padding: 6.4rem 8rem;
+
+  box-shadow: 0rem 0.4rem 3.2rem rgba(15, 23, 42, 0.15);
+  border-radius: 1.6rem;
+
+  display: grid;
+  gap: 6.4rem;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #0f172a;
+}
+
+.converter {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 1.6rem;
+  gap: 1.6rem;
+}
+
+.field {
+  width: 27rem;
+  padding: 1.6rem;
+
+  background: #ffffff;
+  outline: 0.1rem solid #94a3b8;
+  border-radius: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.field:hover {
+  outline: 0.15rem solid #7c3aed;
+  transition: outline 200ms;
+}
+
+/* :has don´t work in firefox ;-; */
+.field:has(:focus) {
+  outline: 0.15rem solid #7c3aed;
+  transition: outline 200ms;
+}
+
+.money-from {
+  all: unset;
+  line-height: 2.4rem;
+  color: #0f172a;
+  width: 50%;
+}
+
+.dropdown {
+  width: 50%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 5.6rem;
+  overflow: hidden;
+}
+
+.dropdown:hover {
+  height: fit-content;
+  overflow: initial;
+}
+
+ul {
+  list-style: none;
+  height: 17rem;
+  margin-top: 0.8rem;
+  overflow-y: scroll;
+  background: #ffffff;
+  box-shadow: 0rem 0.4rem 1.6rem rgba(15, 23, 42, 0.15);
+  border-radius: 0.8rem;
+  /* USE THIS FOR HIDDEN SCROLLBAR IN FIREFOX */
+  scrollbar-width: none;
+  position: relative;
+  z-index: 1;
+}
+
+/* USE THIS FOR HIDDEN SCROLLBAR IN CHROME, OPERA, EDGE... */
+ul::-webkit-scrollbar {
+  display: none;
+}
+
+li {
+  padding: 1.2rem 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  cursor: pointer;
+}
+
+.dropdown-selected {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.6rem;
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+
+.dropdown-selected::before {
+  content: "";
+  height: 2.4rem;
+  width: 0.1rem;
+  background-color: rgba(148, 163, 184, 1);
+  position: absolute;
+  left: 0;
+}
+
+.dropdown-selected::after {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url("./assets/chevron-down.svg") no-repeat;
+  opacity: 0.4;
+}
+
+.fi.fis {
+  font-size: 2.4rem;
+  border-radius: 50%;
+}
+
+.dropdown-selected:hover,
+li:hover {
+  background: #ede9fe;
+  transition: background 200ms;
+}
+
+.tooltip {
+  padding: 0.8rem;
+  background: #ffffff;
+  box-shadow: 0 0.4rem 1.6rem rgba(15, 23, 42, 0.15);
+  border-radius: 0.4rem;
+}
+
+.chart-period {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  /* border: 0.1rem solid green; */
+
+  margin: -2.4rem .8rem 0 4.8rem;
+}
+
+.chart-period button {
+  padding: 0.4rem 0.8rem;
+  width: 4.8rem;
+  height: 3.2rem;
+
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: #0f172a;
+}
+
+.chart-period button:hover,
+.chart-period .button-selected {
+  background: #7c3aed;
+  border-radius: 999px;
+  color: #ffffff;
+
+  transition: Background 300ms;
+}
+
+
+@media (max-width: 48rem) {
+  #app {
+    padding: 1.6rem;
+    gap: 3.2rem
+  }
+
+  h1, h2 {
+    font-size: 1.6rem;
+  }
+
+  .coin-converter .converter{
+    flex-direction: column;
+    gap: .8rem;
+  }
+
+  .field{
+    width: 100%;
+  }
+
+  .dropdown-selected{
+    justify-content: space-between;
+  }
+}

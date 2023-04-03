@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de moedas || Boracodar 09</title>
+
+  <link 
+  rel="stylesheet" 
+  href="./style.css" />
+  <link 
+  rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+</head>
+<body>
+  <main id="app">
+    <section class="coin-converter">
+      <h1>Conversor de moedas</h1>
+      <div class="converter">
+        <div class="field">
+          <input 
+          type="text" 
+          name="money-from" 
+          id="money-from" 
+          class="money-from" 
+          value="$1.000"
+          />
+          <div class="dropdown">
+            <div class="dropdown-selected">
+              <span class="fi fi-us fis"></span>
+              USD
+            </div>
+
+            <ul>
+              <li><span class="fi fi-br fis"></span> BRL</li>
+              <li><span class="fi fi-ch fis"></span> CHF</li>
+              <li><span class="fi fi-eu fis"></span> EUR</li>
+              <li><span class="fi fi-gb fis"></span> GBP</li>
+              <li><span class="fi fi-us fis"></span> USD</li>
+            </ul>
+          </div>
+        </div>
+
+        <button><img src="./assets/arrows-exchange.svg" alt="Botão para realizar a troca de lugar dos dois campos" srcset=""></button>
+
+        <div class="field">
+          <input type="text" name="money-from" id="money-from" class="money-from" value="R$ 5.128,00" readonly />
+          <div class="dropdown">
+            <div class="dropdown-selected">
+              <span class="fi fi-br fis"></span>
+              BRL
+            </div>
+
+            <ul>
+              <li><span class="fi fi-br fis"></span> BRL</li>
+              <li><span class="fi fi-ch fis"></span> CHF</li>
+              <li><span class="fi fi-eu fis"></span> EUR</li>
+              <li><span class="fi fi-gb fis"></span> GBP</li>
+              <li><span class="fi fi-us fis"></span> USD</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="coin-exchange-rate">
+      <h2>Taxa de câmbio</h2>
+      <div id="chart"></div>
+      <div class="chart-period">
+        <button>1D</button>
+        <button>5D</button>
+        <button class="button-selected">1M</button>
+        <button>1A</button>
+        <button>5A</button>
+        <button>Máx</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
