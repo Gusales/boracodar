@@ -93,5 +93,10 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
             <td><a href="09">💲 Conversor de moedas</a></td>
             <td>03/04/23</td>
         </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="10">🌧 Página de Clima</a></td>
+            <td>09/04/23</td>
+        </tr>
     </tbody>
 </table></p>
