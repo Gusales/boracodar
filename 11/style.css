@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  max-height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Titillium Web", sans-serif;
+}
+
+
+#app {
+  height: 100vh;
+  display: flex;
+}
+
+#app > * {
+  width: 50%;
+  min-height: 100vh;
+}
+
+#app > div{
+  padding: 4rem 11.2rem;
+}
+
+.bg-image{
+  object-fit: cover;
+}
+
+main{
+  margin-top: 11.2rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+  color: #1e293b;
+  line-height: 5.5rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #475569;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  color: #7c3aed;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.form-header{
+  max-width: 35rem;
+}
+
+form, .form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 4rem;
+}
+
+label[for="password"]{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  border: 0.1rem solid #e2e8f0;
+  border-radius: 0.4rem;
+  padding: 1.6rem 1.2rem;
+}
+
+input:hover, input:focus{
+  outline: .1rem solid #7c3aed;
+}
+
+.input-invalid{
+  outline: .1rem solid #ED3A5A;
+}
+
+span{
+  font-size: 1.4rem;
+  color: #ED3A5A;
+}
+
+.input-wrapper{
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+.input-wrapper input{
+  width: 100%;
+}
+
+.input-wrapper i{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.fa-solid{
+  color: #94A3B8;
+  font-size: 2rem;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  text-align: center;
+}
+
+button[type="submit"] {
+  padding: 1.6rem 2.4rem;
+  border-radius: 0.4rem;
+  background: #7c3aed;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background: #9f67ff;
+  transition: Background 400ms;
+}
+
+
+@media (max-width: 1024px) {
+  .bg-image {
+    display: none;
+  }
+
+  #app > div{
+    width: 100vw;
+  }
+}
+

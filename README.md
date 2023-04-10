@@ -54,9 +54,9 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
             <td>08/04/23</td>
         </tr>
     <tr>
-            <td>03</td>
+            <td>02</td>
             <td><a href="02">🛋️ Card de Produto</a></td>
-            <td>27/03/23</td>
+            <td>08/04/23</td>
         </tr>
         <tr>
             <td>03</td>
@@ -97,6 +97,11 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
             <td>10</td>
             <td><a href="10">🌧 Página de Clima</a></td>
             <td>09/04/23</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><a href="11">🔒 Formulário de Login</a></td>
+            <td>10/04/23</td>
         </tr>
     </tbody>
 </table></p>

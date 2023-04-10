@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login || Boracodar 11</title>
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      <header><img src="./assets/logo.png" alt="logo da empresa" /></header>
+      <main>
+        <section class="form-header">
+          <h1>Acesse a Plataforma</h1>
+          <p>Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
+        </section>
+        <div class="form">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+          <span></span>
+      
+          <label for="password">Senha <a href="#">Esqueceu sua senha?</a></label>
+          <div class="input-wrapper">
+            <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+      
+          <button type="submit" onclick="valid()">Entrar</button>
+      
+          <p>Ainda não tem uma conta? <a href="#">Inscreva-se</a></p>
+        </div class="form">
+      </main>
+    </div>
+
+    <img src="./assets/bg.jpg" alt="" class="bg-image">
+  </div>
+  <!-- <img src="./assets/bg.jpg" alt="imagem com o backgroud da página" class="bg-image" /> -->
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
