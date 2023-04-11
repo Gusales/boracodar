@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Kanban || Boracodar 12</title>
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+</head>
+
+<body>
+
+  <div id="app">
+    <nav>
+      <img src="./assets/logo.png" alt="Imagem do logotipo da empresa">
+
+      <ul>
+        <li class="active flex"> <img src="./assets/svg/tablet-portrait.svg" alt="Icone de Tablet"> Boards</li>
+        <li class="flex"> <img src="./assets/svg/people.svg" alt="Icone de pessoas"> Equipes</li>
+        <li class="flex"> <img src="./assets/svg/document-text.svg" alt="Icone de papel de relatório"> Relatórios</li>
+        <li class="flex"> <img src="./assets/svg/cog.svg" alt="Icone de ajustes"> Ajustes</li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="title-kanban flex">
+        <div class="title-field flex">
+          <h1>Meu Kanban</h1>
+          <i class="fa-solid fa-pen"></i>
+        </div>
+        <img src="https://avatars.githubusercontent.com/u/85498221?v=4" alt="Icone do usuário" class="user-image" />
+      </section>
+
+      <form class="form-kanban">
+        <button class="form-filter">
+          <img src="./assets/svg/filter.svg" alt="icone de filtro"> Filter
+        </button>
+
+        <div class="input-wrapper flex">
+          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input type="text" placeholder="Busque por cards, assuntos ou responsáveis..." />
+        </div>
+      </form>
+
+      <section class="kanban">
+        <div class="kanban-list">
+          <h3>A fazer</h3>
+          <div class="cards">
+            <section class="kanban-card">
+              <h4>#boraCodar um Kanban 🧑‍💻</h4>
+              <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.</p>
+              <div class="tags">
+                <span>rocketseat</span> <span>desafio</span>
+              </div>
+            </section>
+            <section class="kanban-card">
+              <h4>Manter a ofensiva 🔥</h4>
+              <p>Manter minha atividade na plataforma da Rocketseat para não perder a ofensiva</p>
+              <div class="tags">
+                <span>rocketseat</span>
+              </div>
+            </section>
+            <section class="kanban-card">
+              <h4>Almoçar 🥗</h4>
+              <p>Me alimentar, aproveitando um momento de descanso para recarregar minhas energias durante o almoço</p>
+              <div class="tags">
+                <span>autocuidado</span>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="kanban-list">
+          <h3>Fazendo</h3>
+          <div class="cards">
+            <section class="kanban-card">
+              <h4>Conferir o novo desafio 🚀</h4>
+              <p>Conferir o novo projeto do #boraCodar para fazê-lo da melhor maneira possível</p>
+              <div class="tags">
+                <span>rocketseat</span> <span>desafio</span>
+              </div>
+            </section>
+            <section class="kanban-card">
+              <h4>Ser incrível 😎</h4>
+              <p>Sempre me lembrar de manter minha autenticidade e espalhar amor</p>
+              <div class="tags">
+                <span>autocuidado</span>
+              </div>
+            </section>
+
+          </div>
+        </div>
+        <div class="kanban-list">
+          <h3>Feito</h3>
+          <div class="cards">
+            <section class="kanban-card">
+              <h4>#boraCodar uma Tela de login 🧑‍💻</h4>
+              <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir uma tela de login</p>
+              <div class="tags">
+                <span>rocketseat</span> <span>desafio</span>
+              </div>
+            </section>
+            <section class="kanban-card">
+              <h4>#boraCodar uma página de clima 🧑‍💻</h4>
+              <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir uma página de clima.</p>
+              <div class="tags">
+                <span>rocketseat</span> <span>desafio</span>
+              </div>
+            </section>
+            <section class="kanban-card">
+              <h4>#boraCodar um conversor de moedas 🧑‍💻</h4>
+              <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um conversor de moedas</p>
+              <div class="tags">
+                <span>rocketseat</span> <span>desafio</span>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+  </div>
+
+</body>
+
+</html>

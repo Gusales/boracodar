@@ -103,5 +103,10 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
             <td><a href="11">🔒 Formulário de Login</a></td>
             <td>10/04/23</td>
         </tr>
+        <tr>
+            <td>12</td>
+            <td><a href="12">📝 Meu Kanban</a></td>
+            <td>11/04/23</td>
+        </tr>
     </tbody>
 </table></p>
