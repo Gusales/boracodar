@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro", sans-serif;
+
+  background: #111827;
+  display: grid;
+  place-content: center;
+}
+
+#app {
+  padding: 3.2rem;
+  height: max-content;
+
+  background: #1f2937;
+
+  border: 0.1rem solid #374151;
+  border-radius: 0.8rem;
+
+  display: grid;
+  gap: 4.8rem;
+}
+
+.card-cartao {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6.4rem;
+}
+
+.cartao-inputs {
+  display: grid;
+  gap: 2.4rem;
+}
+
+.input-wrapper {
+  display: grid;
+  gap: 0.4rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #e5e7eb;
+}
+
+input {
+  all: unset;
+
+  padding: 1.2rem;
+  color: #f3f4f6;
+  font-size: 1.6rem;
+
+  background: #111827;
+  border: 0.1rem solid #374151;
+  border-radius: 0.4rem;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+input:focus {
+  outline: 0.15rem solid #9333ea;
+}
+
+input.error {
+  outline: 0.15rem solid #fb7185;
+}
+
+.flex{
+  display: flex;
+}
+
+.col-2 {
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.col-2 .input-wrapper:nth-child(2) {
+  flex-basis: 20%;
+}
+
+.cartao{
+  width: 32.8rem;
+  height: 21.2rem;
+
+  perspective: 60rem; /* https://developer.mozilla.org/en-US/docs/Web/CSS/perspective */
+}
+
+.cartao > div{
+  width: inherit;
+  height: inherit;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+
+  transition: all .5s cubic-bezier(0.175, 0.5, 0.22, 1.100);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.cartao .front{
+  background: url('./assets/credit-card/cc-front.png') no-repeat;
+  transform: rotateY(0);
+}
+.cartao .back{
+  background: url('./assets/credit-card/cc-back.png') no-repeat;
+  transform: rotateY(-180deg);
+  top: -0.5rem;
+}
+.cartao:active .front,
+.cartao:hover .front{
+  transform: rotateY(180deg);
+}
+.cartao:active .back,
+.cartao:hover .back{
+  transform: rotateY(0);
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+
+  padding: 1.6rem 4.8rem;
+  background: #9333ea;
+  box-shadow: 0rem 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.4rem;
+
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #f9fafb;
+}
+
+button:hover {
+  background: #a855f7;
+  transition: Background 200ms;
+}
+
+button:focus {
+  outline: 0.4rem solid #f9fafb;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background: #9333ea;
+}
+
+@media (max-width: 940px) {
+  body{
+    padding: 2rem;
+  }
+
+  #app{
+    min-height: 80vh;
+    grid-template-rows: 1fr max-content;
+  }
+
+  .card-cartao{
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    justify-items: center;
+  }
+
+}

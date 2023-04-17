@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cartão de Crédito || Boracodar 13</title>
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <form id="app">
+    <section class="card-cartao">
+
+      <section class="cartao-inputs">
+
+        <div class="input-wrapper">
+          <label for="numCard">Número do cartão</label>
+          <input type="text" name="numCard" id="numCard" placeholder="0000 0000 0000 0000">
+
+        </div>
+
+        <div class="input-wrapper">
+          <label for="nameCard">Nome do titular</label>
+          <input type="text" name="nameCard" id="nameCard" placeholder="Nome como está no cartão">
+
+        </div>
+
+        <div class="col-2 flex">
+
+          <div class="input-wrapper">
+            <label for="validadeCard">Validade</label>
+            <input type="text" name="validadeCard" id="validadeCard" placeholder="mm/dd">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="cvv" class="label-with-image">CVV</label> 
+            <input type="text" name="cvv" id="cvv" placeholder="***">
+          </div>
+
+        </div>
+      </section>
+
+      <section class="cartao">
+        <div class="front"></div>
+        <div class="back"></div>
+      </section>
+
+
+    </section>
+    <button type="submit">Adicionar Cartão</button>
+  </form>
+
+  <script src="https://unpkg.com/imask"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
