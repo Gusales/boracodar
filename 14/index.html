@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componente de Upload || Boracodar 14</title>
+
+  <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+  <main id="app">
+
+    <section class="uploads">
+      <i class="ph ph-cloud-arrow-up" style="color: #7C3AED;"></i>
+
+      <h2>Importe seus arquivos</h2>
+      <p>Arraste ou clique para fazer upload</p>
+      <input type="file" />
+    </section>
+
+    <section class="files">
+      <div class="file file-uploading">
+        <div class="file-icon">
+          <i class="ph-fill ph-file"></i>
+        </div>
+
+        <div class="file-details">
+          <h3>Scann_158.pdf</h3>
+          <span>30 MB </span>
+          <span>/ 74MB</span>
+          <div class="file-uploading-progress">
+            <progress value="46" max="100" ></progress>
+            <span>46%</span>
+          </div>
+        </div>
+
+        <div class="action-file">
+          <i class="ph ph-x"></i>
+        </div>
+      </div>
+
+      <div class="file file-upload-sucess">
+        <div class="file-icon">
+          <i class="ph-fill ph-file"></i>
+        </div>
+        
+        <div class="file-details">
+          <h3>README.rm</h3>
+          <span>13 KB</span>
+          <div class="file-uploading-progress">
+            <progress value="100" max="100"></progress>
+            <span>100%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="file file-upload-error">
+        <div class="file-icon">
+          <i class="ph-fill ph-file"></i>
+        </div>
+        
+        <div class="file-details">
+          <h3>picture1.jpeg</h3>
+          <span>6.3 MB</span>
+          <div class="file-uploading-progress">
+            <progress value="100" max="100"></progress>
+            <span>Erro</span>
+          </div>
+        </div>
+        
+        <div class="action-file">
+          <i class="ph ph-arrow-clockwise"></i>
+        </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

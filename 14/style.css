@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fbfaff;
+  height: 100vh;
+
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  line-height: 130%;
+}
+
+#app {
+  margin: auto;
+  height: inherit;
+  max-width: 44rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.uploads {
+  background: #f3f0ff;
+  border: 0.1rem dashed #c1b2fa;
+  border-radius: 0.8rem;
+  padding: 2.8rem 0 3.2rem;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.uploads.dragover,
+.uploads:hover {
+  background: #ebe6ff;
+  transition: Backgroud 200ms;
+}
+
+.uploads i {
+  font-size: 4.8rem;
+}
+
+.uploads h2 {
+  font-weight: 700;
+  font-size: 1.6rem;
+
+  color: #7a5fec;
+
+  margin-top: 1.2rem;
+}
+
+.uploads p {
+  font-size: 1.4rem;
+  color: #746e82;
+}
+
+.uploads input {
+  all: unset;
+  opacity: 0;
+  inset: 0;
+  position: absolute;
+}
+
+.files {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.file {
+  padding: 0.8rem;
+  background: #ffffff;
+  box-shadow: 0rem 0.4rem 1.6rem #eae2fd;
+  border-radius: 0.8rem;
+
+  position: relative;
+  display: flex;
+  gap: inherit;
+
+  --bg-icon-color: #ffffff;
+  --icon-color: #000000;
+  --progress-bar-color: #000000;
+  --progres-bar-text-color: #999999;
+}
+
+.file-uploading{
+  --bg-icon-color: #E9E3F8;
+  --icon-color: #AC96E4;
+  --progress-bar-color: linear-gradient(90deg, rgba(58, 97, 237, 0.52) 0%, #7C3AED 100%);
+  --progres-bar-text-color: #9892A6;
+}
+
+.file-upload-sucess{
+  --bg-icon-color: #DAF2D9;
+  --icon-color: #73B172;
+  --progress-bar-color: #73B172;
+  --progres-bar-text-color: #4E884D;
+}
+
+.file-upload-error{
+  --bg-icon-color: #F2D9D9;
+  --icon-color: #E36363;
+  --progress-bar-color: transparent;
+  --progres-bar-text-color: #E36363;
+}
+.file .file-icon {
+  background-color: var(--bg-icon-color);
+  color: var(--icon-color);
+  border-radius: .4rem;
+  padding: 1.6rem 1.2rem;
+  font-size: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file .file-details {
+  flex: 1;
+}
+
+.file .file-details h3 {
+  font-size: 1.4rem;
+  color: #575361;
+}
+
+.file .file-details span {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #857e95;
+}
+
+.file .file-details .file-uploading-progress{
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+
+  line-height: 0;
+  margin-top: .4rem;
+}
+
+progress{
+  flex: 1;
+  appearance: none;
+  -webkit-appearance: none;
+  height: .8rem;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-bar{
+  background: #e3e3ed;
+}
+
+progress::-webkit-progress-value{
+  background: var(--progress-bar-color);
+}
+
+.file .file-uploading-progress span{
+  color: var(--progres-bar-text-color);
+}
+
+.action-file{
+  position: absolute;
+  right: .8rem;
+  top: .8rem;
+  color: #794FED;
+  cursor: pointer;
+}

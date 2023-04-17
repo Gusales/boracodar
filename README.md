@@ -113,5 +113,10 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
             <td><a href="13">💳 Formulário de Cartão de Crédito</a></td>
             <td>17/04/23</td>
         </tr>
+        <tr>
+            <td>14</td>
+            <td><a href="14">💻 componente de upload</a></td>
+            <td>17/04/23</td>
+        </tr>
     </tbody>
 </table></p>
