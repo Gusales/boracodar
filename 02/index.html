@@ -7,11 +7,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Card de Produto || Boracodar 02</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+  <main id="app">
+    <section class="image-card">
+      <img src="./assets/product.jpg" alt="Imagem do sofá" id="productImage">
 
+      <!-- <img src="./assets/product.gif" alt="Gif do sofá" class="animate-sofa"> -->
+
+      <button onclick="animateProduct()" class="btn-360">
+        <img src="./assets/svg/360.svg" alt="Rotacionar sofá em 360 graus">
+      </button>
+      <button onclick="stopProduct()" class="btn-close none"> <img src="./assets/svg/close.svg"
+          alt="Rotacionar sofá em 360 graus">
+      </button>
+    </section>
+
+    <section class="info-card">
+      <p>CÓDIGO: 42404</p>
+      <h1>Sofá Margot II - Rosé</h1>
+      <p>R$ 4.000</p>
+      <button>ADICIONAR À CESTA</button>
+    </section>
+  </main>
+
+  <script src="./main.js"></script>
 </body>
 
 </html>

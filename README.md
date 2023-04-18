@@ -4,7 +4,6 @@
 
 Estes são os projetos #boraCodar promovidos pela <a href="https://www.youtube.com/@rocketseat">Rocketseat</a> e desenvolvidos por mim. <br>
 <a href="https://boracodar.dev">Acesse o desafio desta semana clicando aqui!</a> <br>
-(Infelizmente, não consegui codar o desafio 02, mas futuramente ele estará aqui!)
 
 <strong>Never stop learning! 💭</strong>
 
@@ -56,7 +55,7 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
     <tr>
             <td>02</td>
             <td><a href="02">🛋️ Card de Produto</a></td>
-            <td>08/04/23</td>
+            <td>18/04/23</td>
         </tr>
         <tr>
             <td>03</td>

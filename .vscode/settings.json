@@ -23,7 +23,7 @@
   // prettier
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.enable": true,
-  "prettier.singleQuote": false,
+  "prettier.singleQuote": true,
   "prettier.tabWidth": 2,
   "prettier.semi": false,
 
