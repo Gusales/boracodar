@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Player de Música || Boracodar 01</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  
+  <div id="app">
+
+    <div class="player player-1">
+      <img src="./assets/album.jpg" alt="Foto da capa do album acorda devinho">
+
+      <div class="music-info">
+        <h2>Acorda Devinho</h2>
+        <h3>Banda Rocketseat</h3>
+      </div>
+
+      <div class="music-controllers">
+        <button><i class="ph-fill ph-rewind"></i></button>
+        <button><i class="ph-fill ph-play"></i></button>
+        <button><i class="ph-fill ph-fast-forward"></i></button>
+      </div>
+
+      <progress value="85" max="100"></progress>
+      <div class="music-time">
+        <span>03:20</span>
+        <span>00:12</span>
+      </div>
+
+    </div>
+
+    <div class="player player-2">
+
+      <div class="music-img-title">
+        <img src="./assets/album.jpg" alt="Foto da capa do album acorda devinho">
+        <div class="music-info">
+          <h2>Acorda Devinho</h2>
+          <h3>Banda Rocketseat</h3>
+        </div>
+      </div>
+
+      <div class="music-controllers">
+        <button><i class="ph-fill ph-rewind"></i></button>
+        <button><i class="ph-fill ph-play"></i></button>
+        <button><i class="ph-fill ph-fast-forward"></i></button>
+      </div>
+
+      <progress value="85" max="100"></progress>
+      <div class="music-time">
+        <span>03:20</span>
+        <span>00:12</span>
+      </div>
+    </div>
+
+    <div class="player player-3">
+
+      <div class="music-img-title">
+        <img src="./assets/album.jpg" alt="Foto da capa do album acorda devinho">
+        <div class="music-info">
+          <h2>Acorda Devinho</h2>
+          <h3>Banda Rocketseat</h3>
+        </div>
+      </div>
+
+      <div class="music-controllers">
+        <button><i class="ph-fill ph-rewind"></i></button>
+        <button><i class="ph-fill ph-play"></i></button>
+        <button><i class="ph-fill ph-fast-forward"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </body>
+
 </html>

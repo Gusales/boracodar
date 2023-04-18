@@ -4,7 +4,7 @@
 
 Estes são os projetos #boraCodar promovidos pela <a href="https://www.youtube.com/@rocketseat">Rocketseat</a> e desenvolvidos por mim. <br>
 <a href="https://boracodar.dev">Acesse o desafio desta semana clicando aqui!</a> <br>
-(Infelizmente, não consegui codar os desafios 01 e 02, mas futuramente eles já estarão aqui!)
+(Infelizmente, não consegui codar o desafio 02, mas futuramente ele estará aqui!)
 
 <strong>Never stop learning! 💭</strong>
 
