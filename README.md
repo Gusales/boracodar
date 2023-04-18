@@ -51,7 +51,7 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
     <tr>
             <td>01</td>
             <td><a href="01">🎵 Player de Música</a></td>
-            <td>08/04/23</td>
+            <td>17/04/23</td>
         </tr>
     <tr>
             <td>02</td>
