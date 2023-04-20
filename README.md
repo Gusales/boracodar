@@ -114,8 +114,13 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
         </tr>
         <tr>
             <td>14</td>
-            <td><a href="14">💻 componente de upload</a></td>
+            <td><a href="14">💻 Componente de upload</a></td>
             <td>17/04/23</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><a href="15">💸 Pricing Table</a></td>
+            <td>20/04/23</td>
         </tr>
     </tbody>
 </table></p>

@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
+  --color-green-100: #04d361;
+  --color-green-200: #1b873f;
+  --color-purple-100: #996dff;
+  --color-purple-200: #7c3aed;
+  --color-white: #ffffff;
+  --color-orange: #fba94c;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-gray-50);
+  font-size: 1.6rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#app {
+  width: 80%;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.4rem;
+
+  padding: 8rem 2rem;
+}
+
+.card {
+  padding: 4.8rem 3.2rem 3.2rem;
+  background: var(--color-white);
+  border: 0.1rem solid var(--color-gray-200);
+  border-radius: 1rem;
+
+  display: grid;
+  transition: transform 300ms;
+}
+
+.card:active,
+.card:hover {
+  outline: 0.1rem solid var(--color-purple-100);
+  transform: scale(1.05);
+}
+
+.card-title > span {
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-purple-200);
+}
+
+.card-title .plan {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title .plan h1 {
+  font-size: 2.4rem;
+  line-height: 3.7rem;
+  color: var(--color-gray-800);
+}
+
+.card-title .plan p {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.card-title .plan p > span {
+  font-weight: 400;
+}
+
+.card-title .plan p > strong {
+  font-size: 2rem;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  padding: 1.6rem 2.4rem;
+  margin-top: 1.6rem;
+  flex: 1;
+  border: 0.1rem solid var(--color-gray-800);
+  border-radius: 0.4rem;
+
+  color: var(--color-gray-800);
+  font-weight: bold;
+  text-align: center;
+}
+
+button:active,
+button:hover {
+  color: var(--color-white);
+  background-color: var(--color-gray-800);
+
+  transition: Background 400ms ease-in-out;
+}
+
+ul {
+  list-style: none;
+  margin-top: 1.6rem;
+  padding-top: 1.6rem;
+
+  border-top: 0.1rem solid var(--color-gray-200);
+  display: grid;
+  gap: 1.6rem;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+li i.ph-check {
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--color-green-200);
+}
+
+li i.ph-info {
+  font-size: 1.6rem;
+  color: var(--color-gray-900);
+}
+
+li p {
+  letter-spacing: 0.06em;
+  color: var(--color-gray-600);
+  flex: 1;
+}
+
+.enterprise .plan h1 {
+  font-size: 3.2rem;
+  line-height: 5rem;
+}
+
+.enterprise button {
+  margin-top: 3.2rem;
+}
+
+.enterprise ul {
+  margin-top: 3.2rem;
+  padding-top: 3.2rem;
+}
+
+.ultimate {
+  position: relative;
+
+  background: var(--color-gray-900);
+}
+
+.ultimate:hover {
+  outline: none;
+}
+
+.ultimate::before {
+  content: 'mais vantajoso';
+  display: inline-block;
+
+  padding: 0.8rem 1.6rem;
+
+  background: var(--color-orange);
+  border-radius: 0.6rem;
+
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-gray-900);
+
+  position: absolute;
+  top: -1.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ultimate .card-title > span {
+  color: var(--color-purple-100);
+}
+
+.ultimate .card-title .plan,
+.ultimate .card-title .plan h1 {
+  color: var(--color-gray-50);
+}
+
+.ultimate button {
+  background-color: var(--color-purple-100);
+  color: var(--color-white);
+}
+
+.ultimate button:hover,
+.ultimate button:active {
+  background-color: var(--color-purple-200);
+  transition: Background 400ms ease-in-out;
+}
+
+.ultimate ul{
+  border-top-color: var(--color-gray-700);
+}
+
+.ultimate ul li p {
+  color: var(--color-gray-300);
+}
+
+.ultimate ul li i.ph-info {
+  color: var(--color-gray-500);
+}
+
+@media (max-width: 1200px) {
+  #app {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    gap: 4.1rem;
+    padding: 5rem 8rem;
+
+    overflow-x: hidden;
+  }
+}
