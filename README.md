@@ -127,5 +127,20 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
             <td><a href="16">👤 Página de contatos</a></td>
             <td>27/04/23</td>
         </tr>
+         <tr>
+            <td>17</td>
+            <td><a href="17">🗓 Data Picker</a></td>
+            <td>03/05/23</td>
+        </tr>
+         <tr>
+            <td>18</td>
+            <td><a href="18">⭐ Star Wars Day </a></td>
+            <td>10/05/23</td>
+        </tr>
+         <tr>
+            <td>19</td>
+            <td><a href="19">🚗 Widget de transporte</a></td>
+            <td>10/05/23</td>
+        </tr>
     </tbody>
 </table></p>

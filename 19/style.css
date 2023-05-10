@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  width: 100%;
+  font-size: 1.6rem;
+  background: #1e1e1e;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input,
+button {
+  all: unset;
+}
+button {
+  cursor: pointer;
+}
+
+#app {
+  width: 40rem;
+  height: 40rem;
+  background: #ffffff;
+  border-radius: 2rem;
+  padding: 1.6rem 3.2rem 1.6rem;
+
+  display: grid;
+  gap: 1.6rem;
+
+  position: relative;
+}
+
+#app::before {
+  content: '';
+  display: block;
+  width: 15rem;
+  height: 1rem;
+  border-radius: 999rem;
+  background: #e5d8ea;
+
+  position: absolute;
+  left: 50%;
+  top: 1.6rem;
+  transform: translateX(-50%);
+}
+
+header {
+  color: #372d3b;
+  margin-top: 1.6rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+header h1 {
+  font-size: 2.4rem;
+}
+
+header h1 span {
+  color: #864293;
+}
+
+header h2 {
+  font-size: 1.8rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .driver {
+  position: relative;
+  display: flex;
+}
+
+.driver .driver-info {
+  position: relative;
+  z-index: 1;
+}
+
+.driver-info .image {
+  position: relative;
+}
+
+.driver-info .image span {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.3rem 0.6rem;
+
+  background: #372d3b;
+  border-radius: 1.6rem;
+  color: #ffffff;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.driver-info h5 {
+  font-size: 1.2rem;
+  color: #372d3b;
+  margin-left: 2rem;
+}
+
+.driver-info .image > img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 999rem;
+}
+
+.driver > img {
+  width: 12.5rem;
+  height: 5rem;
+
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.car-info {
+  color: #372d3b;
+  display: grid;
+  gap: 0.8rem;
+}
+
+footer {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+footer label {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  padding: 0;
+  margin: -0.1rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+footer input {
+  width: 20rem;
+  background: #f5edf7;
+  border-radius: 2.4rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 700px) {
+  #app {
+    width: 65rem;
+    height: 65rem;
+  }
+
+  #app::before {
+    width: 20rem;
+  }
+
+  header h1 {
+    font-size: 4rem;
+  }
+
+  header h2 {
+    font-size: 2.4rem;
+  }
+
+  .driver-info .image span {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .driver-info .image > img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .driver-info h5 {
+    font-size: 1.6rem;
+    margin-left: 3rem;
+  }
+
+  .driver > img {
+    width: 25rem;
+    height: 10rem;
+    left: 80%;
+  }
+
+  .car-info {
+    padding-left: 10rem;
+  }
+
+  .car-info h3 {
+    font-size: 3rem;
+  }
+  .car-info h4 {
+    font-size: 2.4rem;
+  }
+
+  footer input {
+    width: 100%;
+  }
+}
