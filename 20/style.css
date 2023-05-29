@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  /* font-size: 62.5%; */
+  font-size: 50%;
+}
+
+body {
+  background: #121214;
+
+  font-size: 1.6rem;
+  font-family: 'Hepta Slab', serif;
+  color: #ffffff;
+
+  padding: 14rem 13rem 14rem 11rem;
+}
+
+body::-webkit-scrollbar{
+  width: .8rem;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #ffffff;
+  border-radius: 999px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.grid{
+  display: grid;
+  gap: 3.2rem;
+}
+
+header{
+  position: fixed;
+  max-width: 30rem;
+}
+
+header h1{
+  font-size: 4.8rem;
+  font-weight: 400;
+}
+
+header i{
+  display: block;
+  margin-top: 3.2rem;
+
+  font-size: 3.2rem;
+}
+
+/* gallery */
+main{
+  margin-left: 50.6rem;
+}
+
+.container{
+  position: relative;
+  outline: .4rem solid transparent;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.model-1 .container:nth-child(1){
+  grid-row: 1/3;
+}
+
+.model-1 .container:nth-child(1) img,
+.model-2 .container:nth-child(3) img{
+  aspect-ratio: 9/16;
+}
+
+.horizontal {
+  grid-column: 1/3;
+}
+
+.horizontal img{
+  aspect-ratio: 16/9;
+}
+
+.model-2 .container:nth-child(3){
+  grid-row: 1/3;
+  grid-column: 2;
+}
+
+/* IMAGE HOVER */
+.container span{
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+  padding: 2.4rem;
+
+  position: absolute;
+  bottom: 0;
+
+  background: linear-gradient(to bottom, transparent, #000000 80%);
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all .4s;
+}
+
+.container:hover{
+  outline-color: #ffffff;
+}
+
+.container:hover span{
+  visibility: visible;
+  opacity: 1;
+}
