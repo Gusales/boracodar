@@ -142,5 +142,10 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
             <td><a href="19">🚗 Widget de transporte</a></td>
             <td>10/05/23</td>
         </tr>
+        <tr>
+            <td>20</td>
+            <td><a href="20">🖼 Galeria de Fotos</a></td>
+            <td>10/05/23</td>
+        </tr>
     </tbody>
 </table></p>
