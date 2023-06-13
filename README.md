@@ -145,7 +145,12 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
         <tr>
             <td>20</td>
             <td><a href="20">🖼 Galeria de Fotos</a></td>
-            <td>10/05/23</td>
+            <td>30/05/23</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><a href="21">🛒 Carrinho de compras</a></td>
+            <td>13/06/23</td>
         </tr>
     </tbody>
 </table></p>
