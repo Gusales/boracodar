@@ -124,7 +124,7 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
         </tr>
         <tr>
             <td>16</td>
-            <td><a href="16">👤 Página de contatos</a></td>
+            <td><a href="16">👥 Página de contatos</a></td>
             <td>27/04/23</td>
         </tr>
          <tr>
@@ -151,6 +151,11 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
             <td>21</td>
             <td><a href="21">🛒 Carrinho de compras</a></td>
             <td>13/06/23</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><a href="22">👤 Profile Settings Component</a></td>
+            <td>14/06/23</td>
         </tr>
     </tbody>
 </table></p>
