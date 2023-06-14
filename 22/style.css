@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+	font-size: 62.5%;
+
+	--gray-100: #38343d;
+	--gray-200: #686071;
+	--gray-300: #797085;
+	--gray-400: #f4effa;
+	--gray-500: #fdfcfe;
+	--red: #aa2222;
+}
+
+body {
+	height: 100vh;
+	background: linear-gradient(107.54deg, #935fd3 0%, #9245f1 100%);
+	font-size: 1.6rem;
+	font-family: 'Heebo', sans-serif;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	width: 37.5rem;
+	height: 58.4rem;
+	background: var(--gray-500);
+
+	border: 0.1rem solid var(--gray-400);
+	box-shadow: 0rem 5.2rem 2.1rem rgba(30, 30, 30, 0.01),
+		0rem 2.9rem 1.8rem rgba(30, 30, 30, 0.05),
+		0rem 1.3rem 1.3rem rgba(30, 30, 30, 0.09),
+		0rem 0.3rem 0.7rem rgba(30, 30, 30, 0.1),
+		0rem 0rem 0rem rgba(30, 30, 30, 0.1);
+	border-radius: 1.2rem;
+
+	padding: 2.4rem 2.4rem 1.6rem;
+}
+
+section.user {
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+	margin-bottom: 0.8rem;
+}
+
+section.user img {
+	width: 4.8rem;
+	height: 4.8rem;
+	border-radius: 0.8rem;
+}
+
+section.user > div {
+	height: 4.8rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+}
+
+section > div h1 {
+	font-weight: 700;
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+
+	color: var(--gray-100);
+}
+
+section > div h2 {
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+
+	color: var(--gray-200);
+}
+
+hr {
+	border: 0.1rem solid var(--gray-400);
+	margin: 1.6rem 0rem;
+}
+
+label {
+	display: block;
+	font-size: 1.2rem;
+	line-height: 100%;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--gray-300);
+
+	margin-bottom: 1.2rem;
+}
+
+.default-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.8rem 0rem;
+}
+
+.default-section div {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+.default-section div i {
+	font-size: 2rem;
+	color: var(--gray-200);
+}
+
+.default-section div p {
+	line-height: 2rem;
+	color: var(--gray-100);
+}
+
+.default-section.logout i,
+.default-section.logout p {
+	color: var(--red);
+}
