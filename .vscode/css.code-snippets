@@ -17,7 +17,7 @@
       "",
       "body {",
       "\tfont-size: 1.6rem;$1",
-      "height: 100vh;",
+      "\theight: 100vh;",
       "}"
     ],
     "description": "Resetting the css that is already included in browsers, and setting the 'rem' to use pixels using in figma projects"
