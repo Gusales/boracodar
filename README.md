@@ -157,5 +157,10 @@ Todos os desafios foram desenvolvidos utilizando as seguintes tecnologias:
             <td><a href="22">👤 Profile Settings Component</a></td>
             <td>14/06/23</td>
         </tr>
+        <tr>
+            <td>23</td>
+            <td><a href="23">🖌 Ajustes de Brilho</a></td>
+            <td>22/06/23</td>
+        </tr>
     </tbody>
 </table></p>
