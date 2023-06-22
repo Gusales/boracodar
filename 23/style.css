@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+
+  background: #242424;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  width: 45rem;
+  height: 93.2rem;
+  background: #151515;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+span {
+  font-size: 3rem;
+  line-height: 3.8rem;
+  text-align: center;
+  margin-top: 35rem;
+}
+
+i{
+  font-size: 2.4rem;
+}
+
+.controls{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 32rem;
+
+  margin-top: 8.2rem;
+  gap: 8.2rem;
+}
+
+.controls div{
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.controls div > div{
+  display: flex;
+  align-items: center;
+  height: .5rem;
+  background: #ffffff;
+  border-radius: 1.2rem;
+}
+
+.controls .hue > div {
+  background: linear-gradient(90deg, #FF0000 5.21%, #FF8A00 16.48%, #FFE600 27.74%, #14FF00 39.35%, #00A3FF 49.37%, #0500FF 61.18%, #AD00FF 72.26%, #FF00C7 83.53%, #FF0000 94.61%);
+}
+
+input[type="range"]{
+  width: 25rem;
+  height: .5rem;
+  appearance: none;
+  background-color: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 0.3rem solid #ffffff;
+  border-radius: 50%;
+  appearance: none;
+  background: #151515;
+  cursor: pointer;
+}
+
+.controls .hue > div input[type="range"]::-webkit-slider-thumb {
+  background: transparent;
+}
+
+.preview {
+  display: flex;
+  width: 98rem;
+  height: 98rem;
+
+  background-color: #ff0000;
+  box-shadow: 0px 0px 53px 13px #ff0000;
+  border-radius: 50%;
+  
+  position: absolute;
+  top: -70%;
+}
+
+@media (max-width: 400px) {
+  main{
+    height: 100vh;
+    width: 100%;
+  }
+}

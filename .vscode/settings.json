@@ -11,14 +11,12 @@
   "editor.formatOnPaste": true,
   "files.autoSave": "off",
   "editor.tabCompletion": "on",
-  // explorer
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,  // explorer
   "explorer.compactFolders": false,
   // workbench
   "workbench.editor.enablePreview": false,
-  "workbench.iconTheme": "catppuccin-frappe",
-  "workbench.colorTheme": "Omni",
   // prettier
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.enable": true,
   "prettier.singleQuote": true,
   "prettier.tabWidth": 2,
