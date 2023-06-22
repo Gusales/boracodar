@@ -1,0 +1,37 @@
+table {
+  min-width: 48rem;
+
+  border-collapse: collapse;
+  font-size: 2.4rem;
+  
+  border-radius: 1.2rem 1.2rem 0 0;
+  overflow: hidden;
+}
+
+table thead tr {
+  background-color: var(--background-primary);
+  
+  text-align: left;
+  font-weight: bold;
+}
+
+table tbody{
+  border: .1rem solid var(--background-primary);
+}
+
+table th,
+table td{
+  padding: 1.2rem 1.6rem;
+}
+
+table tbody tr td:last-child{
+  text-align: center;
+}
+
+table tbody tr:nth-of-type(even){
+  background-color: rgba(102, 67, 184, 0.821);
+}
+
+table tbody tr td a:hover{
+  text-decoration: none;
+}
