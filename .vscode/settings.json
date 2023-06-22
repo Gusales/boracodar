@@ -12,10 +12,14 @@
   "files.autoSave": "off",
   "editor.tabCompletion": "on",
   "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,  // explorer
+  "editor.fontLigatures": true,  
+
+  // explorer
   "explorer.compactFolders": false,
+
   // workbench
   "workbench.editor.enablePreview": false,
+
   // prettier
   "prettier.enable": true,
   "prettier.singleQuote": true,
@@ -23,6 +27,7 @@
   "prettier.semi": false,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.defaultProfile.linux": "zsh",
+  
   // zen mode
   "zenMode.hideActivityBar": true,
   "zenMode.hideTabs": true,
