@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Multistep || Boracodar 23</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <form class="form" id="form">
+      <div class="step-progress">
+        <span class="active" data-step>Contato</span>
+        <i class="ph ph-caret-right"></i>
+        <span data-step>Empresa</span>
+        <i class="ph ph-caret-right"></i>
+        <span data-step>Projeto</span>
+      </div>
+
+      <hr class="divider" />
+
+      <section class="form-step active">
+        <div class="form-content">
+          <!-- NOME -->
+          <div class="input-field">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              placeholder="Como prefere ser chamado"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+
+          <!-- NÚMERO -->
+          <div class="input-field">
+            <label for="tel">Telefone</label>
+            <input
+              type="tel"
+              placeholder="Digite seu número de WhatsApp"
+              id="tel"
+              name="tel"
+              onkeypress="return /\d/.test(event.key)"
+            />
+          </div>
+
+          <!-- EMAIL -->
+          <div class="input-field">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              placeholder="Digite seu e-mail"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+        </div>
+
+        <section class="form-actions just-end">
+          <button type="button" data-action="next">continuar</button>
+        </section>
+      </section>
+
+      <section class="form-step hide">
+        <div class="form-content">
+          <!-- NOME -->
+          <div class="input-field">
+            <label for="enterprise-name">Nome da Empresa</label>
+            <input
+              type="text"
+              placeholder="Qual é o nome da empresa"
+              id="enterprise-name"
+              name="enterprise"
+              required
+            />
+          </div>
+
+          <!-- NÚMERO -->
+          <div class="input-field">
+            <label for="enterprise-number">Número de funcionários</label>
+            <input
+              type="number"
+              placeholder="Digite o número de colaboradores"
+              id="enterprise-number"
+              name="tel"
+              onkeypress="return /\d/.test(event.key)"
+            />
+          </div>
+
+          <!-- TEXTAREA -->
+          <div class="input-field">
+            <label for="enterprise-business">Sobre seu negócio</label>
+            <textarea
+              placeholder="Fale um pouco sobre seus produtos ou serviços"
+              id="enterprise-business"
+              name="enterprise-business"
+            ></textarea>
+          </div>
+        </div>
+
+        <section class="form-actions">
+          <button type="button" class="btn-secondary" data-action="prev">
+            voltar
+          </button>
+          <button type="button" data-action="next">continuar</button>
+        </section>
+      </section>
+
+      <section class="form-step hide">
+        <div class="form-content">
+          <!-- TEXTAREA -->
+          <div class="input-field">
+            <label for="enterprise-project">Objetivos do projeto</label>
+            <textarea
+              placeholder="Descreva quais os objetivos desse projeto"
+              id="enterprise-project"
+              name="enterprise-project"
+              required
+            ></textarea>
+          </div>
+        </div>
+
+        <section class="form-actions">
+          <button type="button" class="btn-secondary" data-action="prev">
+            voltar
+          </button>
+          <button type="submit">enviar resposta</button>
+        </section>
+      </section>
+    </form>
+  </body>
+  <script src="./script.js"></script>
+</html>

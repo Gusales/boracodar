@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Titillium+Web:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* variáveis de cor */
+  --color-white: #ffffff;
+  --color-gray-100: #e1e1e6;
+  --color-gray-200: #8c8c99;
+  --color-gray-300: #7c7c8a;
+  --color-gray-400: #323238;
+  --color-sucess: #1d8841;
+  --color-purple-light: #8257e5;
+  --color-purple-mid: #633bbc;
+}
+
+body {
+  height: 100vh;
+
+  font-size: 1.6rem;
+  font-family: 'IBM Plex Sans';
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button,
+input,
+textarea {
+  all: unset;
+}
+/* hidden arrows of input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* hidden arrows of input type number in navigator Firefox */
+input[type='number'] {
+  appearance: textfield;
+}
+
+.form {
+  width: 59.2rem;
+  padding: 3.2rem;
+
+  background: var(--color-white);
+  border: 0.1rem solid var(--color-gray-100);
+  border-radius: 0.8rem;
+
+  display: grid;
+  gap: 3.2rem;
+  overflow: hidden;
+}
+
+.step-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  counter-reset: step;
+}
+
+.step-progress span {
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  color: var(--color-gray-200);
+}
+
+.step-progress span::before {
+  counter-increment: step;
+  content: counter(step);
+  height: 2.8rem;
+  width: 2.8rem;
+
+  background-color: var(--color-gray-100);
+  border-radius: 999px;
+  color: var(--color-gray-200);
+
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+}
+
+.step-progress span.active {
+  color: var(--color-gray-400);
+}
+
+.step-progress span.active::before {
+  color: var(--color-white);
+  background-color: var(--color-purple-mid);
+}
+
+.step-progress span.done::before {
+  content: '✔';
+  background: var(--color-sucess);
+  color: var(--color-white);
+}
+
+.divider {
+  height: 0.1rem;
+  border: 0.1rem solid var(--color-gray-100);
+}
+
+.form-step {
+  display: block;
+}
+
+.form-step.active {
+  display: grid;
+  gap: 3.2rem;
+}
+
+.form-step .form-content {
+  width: 100%;
+  display: grid;
+  gap: 1.6rem;
+}
+
+.form-content .input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field label {
+  font-weight: bold;
+  line-height: 150%;
+  color: var(--color-gray-400);
+}
+
+.input-field input,
+.input-field textarea {
+  padding: 0.8rem 1.6rem;
+
+  border: 0.1rem solid var(--color-gray-100);
+  border-radius: 0.2rem;
+  color: var(--color-gray-400);
+  line-height: 150%;
+
+  transition: all 400ms;
+}
+
+.input-field input:hover,
+.input-field input:focus {
+  border: 0.1rem solid var(--color-purple-mid);
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-actions button {
+  cursor: pointer;
+  padding: 1.6rem 3.2rem;
+
+  background: var(--color-purple-mid);
+  border-radius: 0.6rem;
+  color: var(--color-white);
+
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 150%;
+
+  transition: all 400ms;
+}
+
+.form-actions button:hover {
+  background: var(--color-purple-light);
+}
+
+.form-actions button.btn-secondary {
+  background: var(--color-white);
+  outline: 0.1rem solid var(--color-purple-mid);
+  color: var(--color-purple-mid);
+}
+
+.form-actions button.btn-secondary:hover {
+  background: var(--color-purple-mid);
+  color: var(--color-white);
+  outline: none;
+}
+
+.just-end {
+  justify-content: flex-end;
+}
+
+@keyframes appear {
+  from {
+    scale: 0.7;
+    opacity: 0;
+  }
+}
+.hide {
+  display: none;
+}
+
+.form-step.active {
+  animation: appear 200ms 300ms ease-in-out backwards;
+}
+
+@keyframes exit {
+  to {
+    transform: translateX(75%);
+    opacity: 0;
+  }
+}
+
+.form-step {
+  animation: exit 300ms ease-in-out backwards;
+}
